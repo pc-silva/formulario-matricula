@@ -19,9 +19,14 @@
     --semantic-error: #DC2626;
 
     --font-family: "Poppins", sans-serif;
-    --h1: 600 2.5rem/1.25 var(--font-family)
-    --h2: 600 1.5rem/1.25 var(--font-family)
-    --h3: 600 1rem/1.25 var(--font-family)
-    --text: 400 1rem/1.5 var(--font-family)
-    --text-secondary: 400 0.875/1.4 var(--font-family)
+    --h1: 600 2.5rem/1.25 var(--font-family);
+    --h2: 600 1.5rem/1.25 var(--font-family);
+    --h3: 600 1rem/1.25 var(--font-family);
+    --text: 400 1rem/1.5 var(--font-family);
+    --text-secondary: 400 0.875/1.4 var(--font-family);
+}
+body{
+    background-color: var(--surface-primary);
+    color: var(--text-primary);
+    font: var(--text)
 }
