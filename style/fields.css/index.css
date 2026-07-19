@@ -3,6 +3,7 @@
 input,
 select,
 textarea {
+  width: 100%;
   background-color: var(--surface-primary);
   appearance: none;
   font: var(--text);
@@ -36,6 +37,12 @@ input[type="date"]{
     top: 50%;
     transform: translateY(-50%);
   }
+}
+input:disabled{
+  background-color: var(--surface-disabled);
+}
+.input-wrapper:has(input:disabled){
+  opacity: 0.5;
 }
 select {
   background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
