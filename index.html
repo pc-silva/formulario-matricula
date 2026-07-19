@@ -28,7 +28,7 @@
             educação infantil Estrelas do Amanhã.
           </p>
 
-          <form action="">
+          <form action="" method="post" enctype="multipart/form-data">
             <fieldset>
               <legend>Informações da criança</legend>
               <div class="input-wrapper">
@@ -54,9 +54,22 @@
               </div>
               <div class="textarea-wrapper">
                 <label for="info-child">Informações médicas</label>
-                <textarea name="info-child" id="info-child" cols="30" rows="10" placeholder="A criança precisa de algum cuidado especial que a escola precisa saber? Se sim, especifique!"></textarea>
+                <textarea
+                  name="info-child"
+                  id="info-child"
+                  cols="30"
+                  rows="10"
+                  placeholder="A criança precisa de algum cuidado especial que a escola precisa saber? Se sim, especifique!"
+                ></textarea>
               </div>
             </fieldset>
+            <div class="droparea-wrapper">
+              <label for="birth-info">Certidão de nascimento</label
+              ><input type="file" />
+              <p>
+                Clique aqui para selecionar arquivos
+              </p>
+            </div>
           </form>
         </div>
       </main>
