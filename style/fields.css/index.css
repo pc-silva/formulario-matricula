@@ -1,3 +1,5 @@
+@import url(droparea.css);
+
 input,
 select,
 textarea {
@@ -11,13 +13,14 @@ textarea {
 }
 input:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+input[type="date"]:focus-within {
   outline: 0.25rem solid var(--surface-secondary);
   border: 1px solid var(--stroke-highlight);
   /*rack para ativar a borda no navegador safari*/
   outline-offset: 0.1px;
 }
-input[type="date"] {
+input[type="date"]{
   position: relative;
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
