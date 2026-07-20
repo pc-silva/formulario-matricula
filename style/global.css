@@ -23,7 +23,7 @@
   --h2: 600 2.5rem/1.25 var(--font-family);
   --h3: 600 1rem/1.25 var(--font-family);
   --text: 400 1rem/1.5 var(--font-family);
-  --text-secondary: 400 0.875/1.4 var(--font-family);
+  --text-secondary: 400 0.875rem/1.4 var(--font-family);
 }
 body {
   background-color: var(--surface-primary);

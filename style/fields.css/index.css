@@ -21,7 +21,7 @@ input[type="date"]:focus-within {
   /*rack para ativar a borda no navegador safari*/
   outline-offset: 0.1px;
 }
-input[type="date"]{
+input[type="date"] {
   position: relative;
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
@@ -38,12 +38,34 @@ input[type="date"]{
     transform: translateY(-50%);
   }
 }
-input:disabled{
-  background-color: var(--surface-disabled);
+input {
+  &:disabled {
+    background-color: var(--surface-disabled);
+  }
+  &[type="email"] {
+    &:valid + div{
+      opacity: 0;
+    }
+    &:invalid {
+      border: 2px solid var(--semantic-error);
+      & + div {
+        display: flex;
+        gap: 0.25rem;
+        color: var(--semantic-error);
+        font: var(--text-secondary);
+      }
+    }
+  }
 }
-.input-wrapper:has(input:disabled){
+.input-wrapper:has(input:disabled) {
   opacity: 0.5;
 }
 select {
-  background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+  background: url(../../assets/icons/arrow-down-01.svg) no-repeat
+    calc(100% - 1rem);
+}
+
+input + small {
+  color: #78716c;
+  margin-top: 0.25rem;
 }
