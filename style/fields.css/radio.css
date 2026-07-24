@@ -22,6 +22,7 @@ label + .radio-wrapper {
   & input:focus {
     all: unset;
     position: absolute;
+    inset: 0;
   }
   & .radio-image {
     position: absolute;
